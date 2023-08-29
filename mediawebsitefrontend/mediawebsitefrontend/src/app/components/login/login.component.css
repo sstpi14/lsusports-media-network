@@ -1,0 +1,530 @@
+.palette {
+    color: #74b65b;
+    color: #3f7041;
+    color: #ba7b36;
+    color: #fbe4b2;
+    color: #f2c284;
+    color: #fecd06;
+    color: #4a3218;
+    color: #675c62;
+
+    color: #7D00F3;
+    color: #B05EFD;
+    color: #F3D900;
+    color: #FFF181;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 7;
+}
+
+.nav-bar {
+    background-color: #48008C;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-item-list {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 0px;
+    padding-left: 0;
+}
+
+.nav-item {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.nav-button {
+    color: white;
+    border: none;
+    background: none;
+    font-size: 2vh;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0 0 4px rgb(255, 255, 255, .7));
+    filter: drop-shadow(0 0 4px rgb(255, 255, 255, .7));
+}
+
+.nav-button:active {
+    color: white;
+    transform: scale(.95);
+}
+
+.nav-logo{
+    margin: 8px;
+    margin-left: 12px;
+}
+
+.container{
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 7px solid blue; */
+    background: linear-gradient(280deg, #FFF181 60%, #B05EFD 40%);
+}
+
+.leftSide{
+    /* border: 7px solid green; */
+    /* border: none; */
+    background-color: none;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slogan{
+    z-index: 1000;
+    /* border: 7px solid #e85c25;
+    background-color: #b8aff7; */
+
+}
+
+.slogan h2{
+    -webkit-filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.7));
+    color: white;
+    font-size: 400%;
+    font-style: italic;
+    margin-left: 10vh;
+    margin-bottom: 300px;
+}
+.quote{
+    border: 1vh solid #ba7b36;
+    background-color: #fbe4b2;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 170px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    width: 40vw;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#toretto{
+    text-align: end;
+    font-style: bold;
+}
+
+.rightSide{
+    /* border: 7px solid red; */
+    /* border: none; */
+    background-color: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 52%;
+    bottom: 0;
+    align-items: center;
+}
+
+.logoContainer{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 950;
+}
+
+.logoContainer img{
+    width: 100%;
+    height: auto;
+    -webkit-filter: drop-shadow(0 0 4px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 4px rgb(0, 0, 0));
+    
+}
+
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30vw;
+    padding: 40px; 
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px rgba(0,0,0,.5);
+    border: 7px solid #7D00F3;
+    border-radius: 10px;  
+    border-top: 40px solid #7D00F3;
+    z-index: 900;
+    font-family: poppins;
+    font-size: 15px;
+    background-color: #FFF6AE;
+}
+
+.loginBox h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: #4a3218;
+}
+
+.loginBox .inputBox {
+    position: relative;
+}
+
+.loginBox .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(5, 5, 5);
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #4a3218;
+}
+
+.loginBox .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .25s;
+}
+
+.loginBox .inputBox input:focus ~ label,
+.loginBox .inputBox input:valid ~ label
+{
+    top: -16px;
+    left: 0;
+    color: #48008C;
+    font-size: 13px;
+}
+
+.loginFormBtns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #48008C;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+
+.registerBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #48008C;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.loginBtn:hover {
+    background-color: #2C0055;
+    transition: 0.25s;
+}
+
+.registerBtn:hover {
+    background-color: #2C0055;
+    transition: 0.25s;
+}
+
+.licence {
+    background-color: #4a3218;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align:center;
+    margin: 0;
+}
+
+.licence p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-style: bold;
+}
+
+.message {
+    color: red;
+    margin-bottom: 15px;
+    font-size: bold;
+}
+
+.quote-content::before {
+    content: "You don't turn your back on family. Even when they do.";
+    animation: switchtoretto 30s infinite linear alternate;
+}
+
+@keyframes switchtoretto {
+    0%  {content:"You don't turn your back on family. Even when they do."}
+    11.5%{color: black;} 
+    12.5%{color: rgba(0, 0, 0, 0);}
+    13.5%{color: black;} 
+    25%  {content:"There's always room for family."}
+    36.5%{color: black;}
+    37.5%{color: rgba(0, 0, 0, 0);}
+    38.5%{color: black;}
+    50%  {content: "Money will come and go. We know that. But the most important thing in life will always be the people in this room, right here, right now. Salute, mi familia."}
+    61.5%{color: black;}
+    62.5%{color: rgba(0, 0, 0, 0);}
+    63.5%{color: black;}
+    75%  {content: "Everyone's looking for the thrill, but what's real is family. Your family."}
+    86.5%{color: black;}
+    87.5%{color: rgba(0, 0, 0, 0);}
+    88.5%{color: black;}
+    100% {content:"I don't have friends. I got family."}
+}
+
+.quote-content-dark::before {
+    content: "You don't turn your back on family. Even when they do.";
+    animation: switchtoretto-dark 30s infinite linear alternate;
+}
+
+@keyframes switchtoretto-dark {
+    0%  {content:"You don't turn your back on family. Even when they do."}
+    11.5%{color: white;} 
+    12.5%{color: rgba(0, 0, 0, 0);}
+    13.5%{color: white;} 
+    25%  {content:"There's always room for family."}
+    36.5%{color: white;}
+    37.5%{color: rgba(0, 0, 0, 0);}
+    38.5%{color: white;}
+    50%  {content: "Money will come and go. We know that. But the most important thing in life will always be the people in this room, right here, right now. Salute, mi familia."}
+    61.5%{color: white;}
+    62.5%{color: rgba(0, 0, 0, 0);}
+    63.5%{color: white;}
+    75%  {content: "Everyone's looking for the thrill, but what's real is family. Your family."}
+    86.5%{color: white;}
+    87.5%{color: rgba(0, 0, 0, 0);}
+    88.5%{color: white;}
+    100% {content:"I don't have friends. I got family."}
+}
+
+.toretto-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toretto {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vh;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* DARK MODE STYLING */
+
+.darktype-palette {
+    color: white;
+    color: #64905b; /* /desaturated green/ */
+    color: #535353; /* /light gray/ */
+    color: #2b2b2b; /* /gray */
+    color: #1b1b1b; /* /dark gray/ */
+    color: #203122; /* /dark green 1/ */
+    color: #152617; /* /dark green 2/ */
+    color: #102012;/*  /dark green 3/ */
+    color: #0d1c0f; /* /dark green 4/ */
+}
+
+.nav-bar-dark {
+    background-color: #102012;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-dark{
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 7px solid blue; */
+    background: linear-gradient(280deg, #535353 60%, #203122 40%);
+}
+
+.quote-dark{
+    border: 1vh solid #102012;
+    background-color: #535353;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 170px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    width: 40vw;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.loginBox-dark{
+    background-color: #535353 ;
+    box-shadow: 0 5px 5px rgba(0,0,0,.5);
+    border: 7px solid #102012;
+    border-top: 40px solid #102012;
+    color: #fff;
+}
+
+.loginBox-dark h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.loginBox-dark .inputBox {
+    position: relative;
+}
+
+.loginBox-dark .inputBox input {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+
+}
+
+.loginBox-dark .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .25s;
+}
+
+.loginBox-dark .inputBox input:focus ~ label,
+.loginBox-dark .inputBox input:valid ~ label
+{
+    top: -16px;
+    left: 0;
+    color: #102012;
+    font-size: 13px;
+}
+
+.loginBtn-dark{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #102012;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.registerBtn-dark{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #102012;
+    background-color:#fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.loginBtn-dark:hover {
+    background-color: #203122;
+    transition: 0.25s;
+}
+
+.registerBtn-dark:hover {
+    background-color: rgb(221, 224, 226);
+    transition: 0.25s;
+}
+
+.message-dark {
+    color: rgb(247, 128, 128);
+}
+
+.licence-dark {
+    background-color: #102012;
+}
+
+.licence-dark p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-style: bold;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ecf0f1;
+}
+
+.center-on-page {
+    position: absolute;
+    top: 75%;
+    left: 41.3%;
+    width: 100%;
+}
+

@@ -1,0 +1,36 @@
+<div class="loginBox">
+    <h2>Register</h2>
+
+    <form id="login-form" ngNativeValidate>
+      <div class="inputBox">
+        <input [(ngModel)]="username" type="text" name="username"  id="usernameInput" required>
+        <label for="usernameInput">Username</label>
+      </div>
+
+      <div class="inputBox">
+        <input [(ngModel)]="password" type="password" name="password"  id="passwordInput" required>
+        <label for="passwordInput">Password</label>
+      </div>
+
+      <div class="inputBox">
+        <input [(ngModel)]="firstname" type="text" name="firstname" required id="fistnameInput">
+        <label for="firstnameInput">First Name</label>
+      </div>
+
+      <div class="inputBox">
+        <input [(ngModel)]="lastname" type="text" name="lastname" required id="lastnameInput">
+        <label for="lastnameInput">Last Name</label>
+      </div>
+
+      <div class="inputBox">
+        <input [(ngModel)]="email" type="text" name="email" required id="emailInput">
+        <label for="emailInput">Email Address</label>
+      </div>
+
+      <div *ngIf="feedbackIsVisible" class="message">Invalid Email</div>
+
+      <div class="loginFormBtns">
+        <input type="submit" name="" value="Log In" class="loginBtn" (click)="register()">
+      </div>
+    </form>
+</div>

@@ -1,0 +1,63 @@
+<body>
+    <div class="nav-container">
+      <div class="nav-bar">
+          <ul class="nav-item-list">
+              <li class="nav-item">
+                  <button class="nav-button" routerLink="/register">Register</button>
+              </li>
+              <li class="nav-item">
+            </li>
+          </ul>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="leftSide">
+        <div class="slogan">
+            <h2>Geaux Tigers!</h2>
+        </div>
+  
+      </div>
+  
+      <div class="rightSide">
+  
+  
+        <div class="loginBox">
+          <h2>Login</h2>
+
+          <form id="login-form" ngNativeValidate>
+            <div class="inputBox">
+              <input [(ngModel)]="username" type="text" name="username"  id="usernameInput" required>
+              <label for="usernameInput">Username</label>
+            </div>
+
+            <div class="inputBox">
+              <input [(ngModel)]="password" type="password" name="password"  id="passwordInput" required>
+              <label for="passwordInput">Password</label>
+            </div>
+
+            <div *ngIf="feedbackIsVisible" class="message">Invalid username or password</div>
+
+            <div class="loginFormBtns">
+              <input type="submit" name="" value="Log In" class="loginBtn" (click)="login()">
+            </div>
+          </form>
+          <div class = "registerFormBtns">
+            New User?
+          </div>
+          <div>
+            <button class="registerBtn" routerLink="/register">Register</button>
+          </div>
+          
+         
+        </div>
+        <div class="center-on-page">
+          <div class="pokeball">
+            <div class="pokeball__button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+  
+  
